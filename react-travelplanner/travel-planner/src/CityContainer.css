@@ -5,7 +5,8 @@
   background: var(--darkblue);
   border-radius: 20px;
   margin: 10px 0;
-  color: #fac300;
+  color: black;
+  background-color: gray;
 }
 .city-img img {
   width: 100%;
@@ -20,4 +21,5 @@
 }
 .city-name {
   font-weight: bold;
+  color: #fac300;
 }

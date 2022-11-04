@@ -6,6 +6,8 @@ const CityExplore = () => {
     <div>
       <p>Top Places</p>
       <CityContainer />
+      <CityContainer />
+      <CityContainer />
     </div>
   );
 };

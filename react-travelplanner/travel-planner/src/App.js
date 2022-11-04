@@ -15,8 +15,8 @@ function App() {
         <Intro />
         <SearchBar />
         <CityExplore />
-        <NavBar />
       </main>
+      <NavBar />
     </div>
   );
 }

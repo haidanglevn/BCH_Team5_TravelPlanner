@@ -1,23 +1,18 @@
 .welcome {
-  display: flex;
+  display: grid;
+  grid-template-columns: 60px auto;
   padding: 10px 20px;
 }
 
-#user-avatar img {
+img {
   background-color: aqua;
   height: 50px;
   width: 50px;
   border-radius: 50%;
 }
-#user-noti {
-  right: 0;
-  width: 30vw;
-}
-#user-hello {
-  flex-grow: 1;
-  padding: 10px;
+
+p {
   font-weight: bold;
-}
-img {
-  display: block;
+  text-align: left;
+  align-self: center;
 }
