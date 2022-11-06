@@ -2,3 +2,10 @@
   width: 100%;
   margin: 10px 0;
 }
+
+input {
+  height: 30px;
+  width: 60%;
+  border-radius: 14px;
+  text-align: center;
+}

@@ -1,10 +1,10 @@
 import "./CityExplore.css";
 import CityContainer from "./CityContainer";
 
-const CityExplore = () => {
+const CityExplore = (props) => {
   return (
     <div>
-      <p>Top Places</p>
+      <p><h2>Top Places</h2></p>
       <CityContainer />
       <CityContainer />
       <CityContainer />

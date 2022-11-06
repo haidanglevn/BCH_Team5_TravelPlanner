@@ -1,3 +1,6 @@
+import { Component } from 'react';
+import React from 'react';
+
 import "./App.css";
 import Welcome from "./Welcome";
 import Intro from "./Intro";
@@ -5,20 +8,36 @@ import SearchBar from "./SearchBar";
 import CityExplore from "./CityExplore";
 import NavBar from "./NavBar";
 
-function App() {
-  return (
-    <div className="App">
-      <div>
-        <Welcome />
-      </div>
-      <main>
+
+class App extends Component {
+  state = {
+    search : '',
+    userName: "Homer",
+  }
+
+  searchHandler = (e) => {
+    this.setState({ search: e.target.value});
+  }
+
+
+  render () {  
+
+    return (
+      <div className="App">
+  
+        <Welcome 
+        userName={this.state.userName}/>
+     
+     
         <Intro />
-        <SearchBar />
+        <SearchBar 
+        searchEvent={this.searchHandler}/>
         <CityExplore />
       </main>
       <NavBar />
     </div>
   );
+}
 }
 
 export default App;

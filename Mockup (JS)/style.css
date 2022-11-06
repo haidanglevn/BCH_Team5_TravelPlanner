@@ -75,7 +75,7 @@ img {
   background: var(--darkblue);
   border-radius: 20px;
   margin: 10px 0;
-  color: #fac300;
+  color: var(--yellow);
 }
 .city-img img {
   width: 100%;
