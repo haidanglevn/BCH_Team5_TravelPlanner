@@ -1,5 +1,5 @@
-import { Component } from 'react';
-import React from 'react';
+import { Component } from "react";
+import React from "react";
 
 import "./App.css";
 import Welcome from "./Welcome";
@@ -8,36 +8,27 @@ import SearchBar from "./SearchBar";
 import CityExplore from "./CityExplore";
 import NavBar from "./NavBar";
 
-
 class App extends Component {
   state = {
-    search : '',
+    search: "",
     userName: "Homer",
-  }
+  };
 
   searchHandler = (e) => {
-    this.setState({ search: e.target.value});
-  }
+    this.setState({ search: e.target.value });
+  };
 
-
-  render () {  
-
+  render() {
     return (
       <div className="App">
-  
-        <Welcome 
-        userName={this.state.userName}/>
-     
-     
+        <Welcome userName={this.state.userName} />
         <Intro />
-        <SearchBar 
-        searchEvent={this.searchHandler}/>
+        <SearchBar searchEvent={this.searchHandler} />
         <CityExplore />
-      </main>
-      <NavBar />
-    </div>
-  );
-}
+        <NavBar />
+      </div>
+    );
+  }
 }
 
 export default App;
